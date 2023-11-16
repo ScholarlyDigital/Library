@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Library - Scholarly</title>
+    <meta property="og:title" content="Library - Scholarly Library" />
+    <link rel="icon" type="image/png" href="/scholarlyv1_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.3;
+        color: var(--dl-color-scheme-darkblue);
+        background-color: var(--dl-color-scheme-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      .services-card:hover > div{
+      background-color: #fff
+      }
+    </style>
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="/library.css" rel="stylesheet" />
+      
+      <div class="library-container">
+        <div class="library-container01">
+          <header data-role="Header" class="navigation-header">
+            <div class="navigation-announcement">
+              <span class="navigation-title">Coach is now powered by GPT-4</span>
+              <div class="navigation-button">
+                <a href = "/coach"><span class="navigation-button-text">See now -&gt;</span></a>
+              </div>
+             </div>
+            <div class="navigation-max-width">
+              <a href="/"><img
+                alt="logo"
+                src="/scholarlyv1_webfriendly-200h.png"
+                class="navigation-image"
+              /></a>
+              <div class="navigation-nav">
+                <nav
+                  class="navigation-links-nav navigation-links-root-class-name17"
+                >
+                  <span class="navigation-links-text Navigation-Link">
+                    <a href="/"><span>Home</span></a>
+                  </span>
+                  <span class="navigation-links-text1 Navigation-Link">
+                    <a href="/library"<span>Library</span></a>
+                  </span>
+                  <span class="navigation-links-text2 Navigation-Link">
+                    <a href="/coach"><span>Coach</span></a>
+                  </span>
+                  <span class="navigation-links-text3 Navigation-Link">
+                    <a href="https://github.com/ScholarlyTeam" target="_blank"><span>About</span></a>
+                 
+                   </span>
+                </nav>
+                <a href="mailto:dev.scholarly.team@gmail.com" target="_blank"><button class="button-secondary button button-md">
+                  <span>Contact Us</span>
+                </button></a>
+              </div>
+              <div data-role="BurgerMenu" class="navigation-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navigation-icon">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                data-role="MobileMenu"
+                class="navigation-mobile-menu mobile-menu"
+              >
+                <div class="navigation-nav1">
+                  <div class="navigation-container">
+                    <a href="/"><img alt="image" class = "navigation-image" src="/scholarlyv1_webfriendly-200h.png" /></a>
+                    <div
+                      data-role="CloseMobileMenu"
+                      class="navigation-close-mobile-menu"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="navigation-icon2">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav
+                    class="navigation-links-nav navigation-links-root-class-name18"
+                  >
+                    <span class="navigation-links-text Navigation-Link">
+                      <a href = "/"><span>Home</span></a>
+                    </span>
+                    <span class="navigation-links-text1 Navigation-Link">
+                      <a href = "/library"><span>Library</span></a>
+                    </span>
+                    <span class="navigation-links-text2 Navigation-Link">
+                      <a href="/coach"><span>Coach</span></a>
+                    </span>
+                    <span class="navigation-links-text3 Navigation-Link">
+                      <a href="https://github.com/ScholarlyTeam" target="_blank"><span>About</span></a>
+                    </span>
+                  </nav>
+                  <a href="mailto:dev.scholarly.team@gmail.com" target="_blank"><button class="button-secondary button button-md">
+                    <span>Contact Us</span>
+                  </button></a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main class="library-main">
+            <div class="section-container">
+              <div class="library-max-width max-content-container">
+                <div class="library-text-container">
+                  <h2 class="library-text">Library [Under Construction]</h2>
+                  <span class="library-text01">
+                    <span>
+                      This is THE all in one archive for all GCSE and IGCSE resources and textbooks for your study. We're still setting up, so we'll notify you when library is complete.
+                    </span>
+                    <br />
+                  </span>
+                  <a href="mailto:dev.scholarly.team@gmail.com" target="_blank"><button class="button-secondary button-lg button">
+                    Something missing?
+                  </button></a>
+                  <div
+                    data-thq="thq-dropdown"
+                    class="library-thq-dropdown list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="library-dropdown-toggle"
+                    >
+                      <span class="library-text04">Subjects</span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        class="library-dropdown-arrow"
+                      >
+                        <svg viewBox="0 0 1024 1024" class="library-icon">
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      class="library-dropdown-list"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown list-item"
+                      >
+                        <a href="#mathematics"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle01"
+                        >
+                          <span class="library-text05">Mathematics</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown01 list-item"
+                      >
+                        <a href="#physics"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle02"
+                        >
+                          <span class="library-text06">Physics</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown02 list-item"
+                      >
+                        <a href="#chemistry"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle03"
+                        >
+                          <span class="library-text07">Chemistry</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown03 list-item"
+                      >
+                        <a href="#biology"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle04"
+                        >
+                          <span class="library-text08">Biology</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown04 list-item"
+                      >
+                        <a href="#english"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle05"
+                        >
+                          <span class="library-text09">English</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown05 list-item"
+                      >
+                        <a href="#history"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle06"
+                        >
+                          <span class="library-text10">History</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown06 list-item"
+                      >
+                        <a href="#geography"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle07"
+                        >
+                          <span class="library-text11">Geography</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown07 list-item"
+                      >
+                        <a href="#business-studies"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle08"
+                        >
+                          <span class="library-text12">Business Studies</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown08 list-item"
+                      >
+                        <a href="#media-studies"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle09"
+                        >
+                          <span class="library-text13">Media Studies</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown09 list-item"
+                      >
+                        <a href="#computer-science"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle10"
+                        >
+                          <span class="library-text14">Computer Science</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown10 list-item"
+                      >
+                        <a href="#french"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle11"
+                        >
+                          <span class="library-text15">French</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown11 list-item"
+                      >
+                        <a href="#spanish"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle12"
+                        >
+                          <span class="library-text16">Spanish</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown12 list-item"
+                      >
+                        <a href="#dutch"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle13"
+                        >
+                          <span class="library-text17">Dutch</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown13 list-item"
+                      >
+                        <a href="#german"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle14"
+                        >
+                          <span class="library-text18">German</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown14 list-item"
+                      >
+                        <a href="#music"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle15"
+                        >
+                          <span class="library-text19">Music</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown15 list-item"
+                      >
+                        <a href="#drama"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle16"
+                        >
+                          <span class="library-text20">Drama</span>
+                        </div></a>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="library-dropdown16 list-item"
+                      >
+                        <a href="#art"><div
+                          data-thq="thq-dropdown-toggle"
+                          class="library-dropdown-toggle17"
+                        >
+                          <span class="library-text21">Art</span>
+                        </div></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="library-container02">
+                  <div class="library-container03" id ="mathematics">
+                    <h2 class="library-text22">Mathematics</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id="physics">
+                    <h2 class="library-text23">Physics</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "chemistry">
+                    <h2 class="library-text24">Chemistry</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51xTUaRiyZL._AC_UF1000,1000_QL80_.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://britams-my.sharepoint.com/personal/adjaffar_britams_nl/Documents/Textbooks/chemistry_textbook.pdf" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Chemistry Triple Book (9-1)</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "biology">
+                    <h2 class="library-text27">
+                      <span>Biology</span>
+                      <br />
+                    </h2>
+                    <div class="library-container04">
+                    <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id="english">
+                    <h2 class="library-text30">English</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "history">
+                    <h2 class="library-text33">History</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "geography">
+                    <h2 class="library-text36">Geography</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "business-studies">
+                    <h2 class="library-text39">Business Studies</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://media.s-bol.com/xkq9Zw2vn4pP/550x711.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "http://www.acklamgrange.org.uk/MediaCache/049/b0a/87a/39458a2c6680edb91308aa40bf382a44.pdf" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Edexcel Business GCSE (9-1)</span></span></div>
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61eu72qgfcL.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://www.pearsonschoolsandfecolleges.co.uk/asset-library/pdf/Secondary/business-and-economics/edexcel-gcse-9-1-Business/samples/edexcel-gcse-9-1-business-ppp.pdf" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Edexcel Business Revision (9-1)</span></span></div>
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.pearson.com/content/dam/one-dot-com/one-dot-com/international-schools/images/international-gcses/business/IG-Business-Student-Book.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://www.pearson.com/content/dam/one-dot-com/one-dot-com/international-schools/pdfs/secondary-curriculum/international-gcse/business/International-GCSE-Business-Student-Book-sample.pdf" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Edexcel IGCSE Business Textbook</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id="media-studies">
+                    <h2 class="library-text42">Media Studies</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id="computer-science">
+                    <h2 class="library-text45">Computer Science</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://images-na.ssl-images-amazon.com/images/I/51cR2It8w-L._AC_UL600_SR600,600_.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://drive.google.com/file/d/1xwWisrzh5IG4SMxZRt3UwSTjQKNgXnI9/view" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Cambridge Textbook</span></span></div>
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51bpCUxsFKL.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://www.pearsonschoolsandfecolleges.co.uk/asset-library/pdf/Secondary/Information-technology/gcse-computer-science-samples/revise-pearson-edexcel-gcse-computer-science-revision-guide.pdf" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Revision Guide</span></span></div>
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://images.ctfassets.net/mrop88jh71hl/55rrbZfwMaURHZKAUc5oOW/9e5fe805eb03135b82e962e92169ce6d/python-programming-language.png" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "https://codingbat.com/python" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>CodingBat</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "french">
+                    <h2 class="library-text48">French</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "spanish">
+                    <h2 class="library-text51">Spanish</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "dutch">
+                    <h2 class="library-text54">Dutch</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "german">
+                    <h2 class="library-text57">German </h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "music">
+                    <h2 class="library-text60">Music</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "drama">
+                    <h2 class="library-text63">Drama</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                  <div class="library-container03" id = "art">
+                    <h2 class="library-text66">Art</h2>
+                    <div class="library-container04">
+                      <div class="portofolio-card-speaker-card portofolio-card-root-class-name30"><div class="portofolio-card-image-container"><img alt="image"src="https://www.ie.edu/insights/wp-content/uploads/2020/11/VanSchendel-Construction.jpg" class="portofolio-card-image"/><div class="portofolio-card-see-project-container"><a href = "/library/" target="_blank"><button class="button-secondary-white button button-md"><span>Open</span></button></a></div></div><span class="portofolio-card-first-name"><span>Under Construction</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script src = "/library.js"></script>
+    <script>
+      window.onload = () => {
+        const runAllScripts = () => {
+          initializeAllSliders();
+        };
+
+        const listenForUrlChanges = () => {
+          let url = location.href;
+          document.body.addEventListener(
+            "click",
+            () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  runAllScripts();
+                  url = location.href;
+                }
+              });
+            },
+            true
+          );
+        };
+
+        const initializeAllSliders = () => {
+          const allSliders = document.querySelectorAll('[data-type="slider"]');
+          allSliders.forEach((slider) => {
+            initializeSlider(slider);
+          });
+        };
+
+        const initializeSlider = (slider) => {
+          const slides = slider.querySelectorAll('[data-type="slide"]');
+          const middle = Math.ceil(slides.length / 2);
+          let currentSlide = middle;
+
+          const nextSlideBtns = document.querySelectorAll(
+            '[data-action="nextSlide"]'
+          );
+          const previousSlideBtns = document.querySelectorAll(
+            '[data-action="previousSlide"]'
+          );
+
+          const changeSlide = (slideIndex, action) => {
+            currentSlide = slideIndex;
+
+            switch (action) {
+              case "next":
+                slideIndex === slides.length
+                  ? (currentSlide = 1)
+                  : currentSlide++;
+                break;
+              case "previous":
+                slideIndex === 1
+                  ? (currentSlide = slides.length)
+                  : currentSlide--;
+            }
+
+            const slide = slides[0];
+            if (!slide) {
+              console.error("No slides present");
+              return;
+            }
+            const style = window.getComputedStyle(slide);
+            slideWidth =
+              parseInt(style.width) +
+              parseInt(style.marginLeft) +
+              parseInt(style.marginRight);
+            const transformValue = -slideWidth * (currentSlide - middle);
+
+            slider.style.transform = `translateX(${transformValue}px)`;
+          };
+
+          previousSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "previous")
+            );
+          });
+
+          nextSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "next")
+            );
+          });
+        };
+
+        runAllScripts();
+      };
+    </script>
+  </body>
+</html>

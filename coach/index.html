@@ -150,11 +150,11 @@
 <body>
   <div>
     <script src="https://scholarly.statuspage.io/embed/script.js" defer></script>
-    <div id="adblock_location"></div>
+    <div id="block_location"></div>
     <link href="/coach.css" rel="stylesheet" />
-    <link href="/adblock.css" rel="stylesheet" />
+    <link href="/block.css" rel="stylesheet" />
      <script>
-      async function detectAdBlock() {
+      async function detectBlock() {
           let maintenance = false;
           const value = `; ${document.cookie}`;
           const parts = value.split(`; developer=`);
@@ -186,18 +186,18 @@
                 </div>
               </div>
               `;
-            let loc = document.getElementById('adblock_location');
+            let loc = document.getElementById('block_location');
             loc.appendChild(elemDiv);
             return;
           }
-          let adBlockEnabled = false
-          const googleAdUrl = 'https://api.scholarly.repl.co/'
+          let blockEnabled = false
+          const url = 'https://api.scholarly.repl.co/'
           try {
-            await fetch(new Request(googleAdUrl)).catch(_ => adBlockEnabled = true)
+            await fetch(new Request(url)).catch(_ => blockEnabled = true)
           } catch (e) {
             adBlockEnabled = true
           }
-          if (adBlockEnabled) {
+          if (blockEnabled) {
             let elemDiv = document.createElement('div');
             elemDiv.innerHTML = `
               <div class="adblock-container">
@@ -224,16 +224,73 @@
                 </div>
               </div>
               `;
-            let loc = document.getElementById('adblock_location');
+            let loc = document.getElementById('block_location');
             loc.appendChild(elemDiv);
           }
+          else {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; notice-seen=`);
+            if (parts.length === 2) return;
+            let elemDiv = document.createElement('div');
+            elemDiv.innerHTML = `
+            <div class="adblock-container" id='notice'>
+              <div class="adblock-heading-container">
+                <div class="adblock-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <h1 class="adblock-text">
+                  <span><span>Library Is Being Shutdown</span></span>
+                  <br />
+                </h1>
+                <span class="adblock-text03">
+                  <span>
+                    <span style="white-space: pre-wrap;">Library is planned to shutdown by the end of 2023.</span>
+                  </span>
+                  <br />
+                  <span>
+                    <span style="white-space: pre-wrap;">A maintained legacy site will be live until March 2024.</span>
+                  </span>
+                  <br />
+                  <span>
+                  </span>
+                  <br />
+                  <button class="button-secondary button button-md input-field-register" id="legacy">Legacy Site</button>
+                  <button class="button-secondary button button-md input-field-register" id="read-more">Read More</button>
+                  <button class="button-secondary button button-md input-field-register" id="close-notice">Close</button>
+                </span>
+              </div>
+            </div>
+            `;
+            let loc = document.getElementById('block_location');
+            loc.appendChild(elemDiv);
+
+            function closeNotice() {
+              document.cookie = `notice-seen=true; path=/`
+              document.getElementById('notice').remove();
+            }
+
+            function openLegacy() {
+              window.location.replace(('https://library.scholarly.digital/coach/'));
+            }
+
+            function readMore() {
+              window.location.replace(('/read-more'));
+            }
+            
+            document.getElementById("close-notice").addEventListener("click", closeNotice);
+            document.getElementById("legacy").addEventListener("click", openLegacy);
+            document.getElementById("read-more").addEventListener("click", readMore);
+        }
       }
-      detectAdBlock();
+      detectBlock();
     </script>
     <div class="coach-container">
       <header data-role="Header" class="navigation-header">
         <div class="navigation-announcement">
-          <span class="navigation-title">Coach can now see images with the Vision profile!</span>
+          <span class="navigation-title">Library is shutting down. </span>
+          <div class="navigation-button">
+            <a href = "/read-more/"><span class="navigation-button-text">See more -&gt;</span></a>
+          </div>
         </div>
         <div class="navigation-max-width">
           <a href="/"><img alt="logo" src="/scholarlyv1_webfriendly-200h.png" class="navigation-image" /></a>
@@ -249,10 +306,10 @@
                 <a href="/coach"><span>Coach</span></a>
               </span>
               <span class="navigation-links-text3 Navigation-Link">
-                <a href="https://github.com/ScholarlyTeam" target="_blank"><span>About</span></a>
+                <a href="https://github.com/ScholarlyDigital" target="_blank"><span>About</span></a>
               </span>
             </nav>
-            <a href="mailto:dev.scholarly.team@gmail.com" target="_blank"><button
+            <a href="mailto:contact@scholarly.digital" target="_blank"><button
                 class="button-secondary button button-md">
                 <span>Contact Us</span>
               </button></a>
@@ -287,11 +344,11 @@
                   <a href="/coach"><span>Coach</span></a>
                 </span>
                 <span class="navigation-links-text3 Navigation-Link">
-                  <a href="https://github.com/ScholarlyTeam" target="_blank"><span>About</span></a>
+                  <a href="https://github.com/ScholarlyDigital" target="_blank"><span>About</span></a>
                 </span>
               </nav>
               <button class="button-secondary button button-md">
-                <a href="mailto:dev.scholarly.team@gmail.com" target="_blank"><span>Contact Us</span></a>
+                <a href="mailto:contact@scholarly.digital" target="_blank"><span>Contact Us</span></a>
               </button>
             </div>
           </div>

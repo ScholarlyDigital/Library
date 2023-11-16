@@ -21,7 +21,15 @@
 .adblock-icon {
   width: 7rem;
   height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.adblock-icon > i {
+  font-size: 6rem;
+}
+
 .adblock-text {
   font-size: 56px;
   font-style: normal;

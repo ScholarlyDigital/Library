@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Scholarly is Changing</title>
+  <meta property="og:title" content="Scholarly Library"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="/scholarlyv1_icon.png">
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Poppins;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: undefined;
+      letter-spacing: normal;
+      line-height: 1.3;
+      color: var(--dl-color-scheme-darkblue);
+      background-color: var(--dl-color-scheme-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&amp;display=swap"
+    data-tag="font" />
+  <style>
+    .services-card:hover>div {
+      background-color: #fff
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="/readmore.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <header data-role="Header" class="navigation-header">
+        <div class="navigation-max-width">
+          <a href="/"><img alt="logo" src="/scholarlyv1_webfriendly-200h.png" class="navigation-image" /></a>
+          <div class="navigation-nav">
+            <nav class="navigation-links-nav navigation-links-root-class-name17">
+              <span class="navigation-links-text Navigation-Link">
+                <a href="/"><span>Home</span></a>
+              </span>
+              <span class="navigation-links-text1 Navigation-Link">
+                <a href="/library"><span>Library</span></a>
+              </span>
+              <span class="navigation-links-text2 Navigation-Link">
+                <a href="/coach"><span>Coach</span></a>
+              </span>
+              <span class="navigation-links-text3 Navigation-Link">
+                <a href="https://github.com/ScholarlyDigital" target="_blank"><span>About</span></a>
+              </span>
+            </nav>
+            <a href="mailto:contact@scholarly.digital" target="_blank"><button
+                class="button-secondary button button-md">
+                <span>Contact Us</span>
+              </button></a>
+          </div>
+          <div data-role="BurgerMenu" class="navigation-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="navigation-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+              </path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="mobile-menu navigation-mobile-menu">
+            <div class="navigation-nav1">
+              <div class="navigation-container">
+                <a href="/"><img alt="image" src="/scholarlyv1_webfriendly-200h.png" class="navigation-image" /></a>
+                <div data-role="CloseMobileMenu" class="navigation-close-mobile-menu">
+                  <svg viewBox="0 0 1024 1024" class="navigation-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="navigation-links-nav navigation-links-root-class-name18">
+                <span class="navigation-links-text Navigation-Link">
+                  <a href="/"><span>Home</span></a>
+                </span>
+                <span class="navigation-links-text1 Navigation-Link">
+                  <a href="/library"><span>Library</span></a>
+                </span>
+                <span class="navigation-links-text2 Navigation-Link">
+                  <a href="/coach"><span>Coach</span></a>
+                </span>
+                <span class="navigation-links-text3 Navigation-Link">
+                  <a href="https://github.com/ScholarlyDigital" target="_blank"><span>About</span></a>
+                </span>
+              </nav>
+              <a href="mailto:contact@scholarly.digital" target="_blank"><button class="button-secondary button button-md">
+                <span>Contact Us</span>
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="home-main">
+        <div class="home-hero section-container">
+        </div>
+        <div class="section-container" id="featured">
+          <div class="home-max-width1 max-content-container">
+            <div class="home-text-container">
+              <span class="home-text09" style="z-index:2;">IMPORTANT NOTICE</span>
+              <h2 class="home-text10 Heading2" style="z-index:2;">Scholarly is Changing</h2>
+              <span class="home-text11">
+              </span>
+            </div>
+            <img src="/scholarly-digital-banner.png" style="max-width: var(--dl-size-size-maxwidth); margin-top: -50px; width: 100%;">
+            <div class="paragraph">Scholarly is rebranding and establishing itself as Scholarly Digital, and this change is a long time coming that will lead the way to a revamp and rebrand of all Scholarly services. Many of the existing projects are too scrappy and outdated, Library being one of them. Detailed information can be found on our <a style="text-decoration: underline black; -webkit-text-decoration: underline black;" href="https://github.com/ScholarlyDigital" target="_blank">GitHub</a> (and our website in the near future), but for now we will list what will happen to the big services in the near future.</div>
+
+            <div class="paragraph"><h3>Library</h3>Intially Library was an experiment to introduce people to Coach, as he was an early development product meant for the full release of Scholarly. Since then, the direction of the project changed dramatically, and what was 'The Scholarly' has now been cancelled. Coach however, has recieved many advancements since release, increasing speed, intelligence, memory, and most recently, seeing images. Coach is planned to live (discussed later), but Library will be shutdown. Coach will need a platform to be interfaced with due to the existing user base, so a stable version of Library will be shifted <a style="text-decoration: underline black; -webkit-text-decoration: underline black;" href="https://library.scholarly.digital" target="_blank">here</a> and will be labelled as Legacy. When the initial Library site shuts down in December 2023, Legacy will take it's place until March 2024, where the Legacy site will too be shut down. The Legacy site is on life support, meaning it will recieve bug fixes, but no new feautures will be added.</div>
+
+            <div class="paragraph"><h3>Coach</h3>Speaking of Coach, he is also due for a revamp. The additional features he recieved over time has racked up some serious technical debt, and he is due for a rework from the ground up. Planned features for the new Coach will include voice input, text-to-speech, image generation, accounts, premium and free tiers and way more. This remake will need a new client, which means the new version of Coach will recieve his own web application in early 2024, so keep an eye out for that.</div>
+
+            <div class="paragraph"><h3>API</h3>Lastly, the API. Just like Coach, the API is due for a remake with a ton more freedom for developers. The v1 API is scheduled to continue running until March 2024, and will be relabled to Legacy when the new API is released. The new API will require developer accounts and tokens, in return for more flexibility and features (that expand past AI and Coach). All new Coach features mentioned will be accessible via the API. As Coach is built on a custom branch of the API (which is a seperate group of endpoints with slightly modified code for independnce), developers can also request their own branches for projects. An early version of the API rework is scheduled to release in December 2023, but the stable version (and the documentation) will release and replace the old API sometime in early-to-mid 2024.</div>
+
+            <div class="paragraph">That being said we hope you stick around with us for this new chapter in Scholarly's history and see the many incredible things we have planned for the education industry as a whole.</div>
+
+            <div class="paragraph">- The Scholarly Digital Team</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  <script>
+    window.onload = () => {
+      const runAllScripts = () => {
+        initializeAllSliders();
+      };
+
+      const listenForUrlChanges = () => {
+        let url = location.href;
+        document.body.addEventListener(
+          "click",
+          () => {
+            requestAnimationFrame(() => {
+              if (url !== location.href) {
+                runAllScripts();
+                url = location.href;
+              }
+            });
+          },
+          true
+        );
+      };
+
+      const initializeAllSliders = () => {
+        const allSliders = document.querySelectorAll('[data-type="slider"]');
+        allSliders.forEach((slider) => {
+          initializeSlider(slider);
+        });
+      };
+
+      const initializeSlider = (slider) => {
+        const slides = slider.querySelectorAll('[data-type="slide"]');
+        const middle = Math.ceil(slides.length / 2);
+        let currentSlide = middle;
+
+        const nextSlideBtns = document.querySelectorAll(
+          '[data-action="nextSlide"]'
+        );
+        const previousSlideBtns = document.querySelectorAll(
+          '[data-action="previousSlide"]'
+        );
+
+        const changeSlide = (slideIndex, action) => {
+          currentSlide = slideIndex;
+
+          switch (action) {
+            case "next":
+              slideIndex === slides.length
+                ? (currentSlide = 1)
+                : currentSlide++;
+              break;
+            case "previous":
+              slideIndex === 1
+                ? (currentSlide = slides.length)
+                : currentSlide--;
+          }
+
+          const slide = slides[0];
+          if (!slide) {
+            console.error("No slides present");
+            return;
+          }
+          const style = window.getComputedStyle(slide);
+          slideWidth =
+            parseInt(style.width) +
+            parseInt(style.marginLeft) +
+            parseInt(style.marginRight);
+          const transformValue = -slideWidth * (currentSlide - middle);
+
+          slider.style.transform = `translateX(${transformValue}px)`;
+        };
+
+        previousSlideBtns.forEach((btn) => {
+          btn.addEventListener("click", () =>
+            changeSlide(currentSlide, "previous")
+          );
+        });
+
+        nextSlideBtns.forEach((btn) => {
+          btn.addEventListener("click", () =>
+            changeSlide(currentSlide, "next")
+          );
+        });
+      };
+
+      runAllScripts();
+    };
+  </script>
+</body>
+
+</html>

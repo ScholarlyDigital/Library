@@ -236,25 +236,23 @@
             <div class="adblock-container" id='notice'>
               <div class="adblock-heading-container">
                 <div class="adblock-icon">
-                  <i class="fa-solid fa-ban"></i>
+                  <i class="fa-solid fa-plug-circle-exclamation"></i>
                 </div>
                 <h1 class="adblock-text">
-                  <span><span>Library Is Being Shutdown</span></span>
+                  <span><span>You are using Legacy Library/span></span>
                   <br />
                 </h1>
                 <span class="adblock-text03">
                   <span>
-                    <span style="white-space: pre-wrap;">Library is planned to shutdown by the end of 2023.</span>
-                  </span>
-                  <br />
-                  <span>
-                    <span style="white-space: pre-wrap;">A maintained legacy site will be live until March 2024.</span>
+                    <span style="white-space: pre-wrap;">Legacy Library is planned to shutdown by March 2024.</span>
                   </span>
                   <br />
                   <span>
                   </span>
                   <br />
-                  <button class="button-secondary button button-md input-field-register" id="legacy">Legacy Site</button>
+                  <span>
+                  </span>
+                  <br />
                   <button class="button-secondary button button-md input-field-register" id="read-more">Read More</button>
                   <button class="button-secondary button button-md input-field-register" id="close-notice">Close</button>
                 </span>
@@ -269,16 +267,12 @@
               document.getElementById('notice').remove();
             }
 
-            function openLegacy() {
-              window.location.replace(('https://library.scholarly.digital/coach/'));
-            }
 
             function readMore() {
               window.location.replace(('/read-more'));
             }
             
             document.getElementById("close-notice").addEventListener("click", closeNotice);
-            document.getElementById("legacy").addEventListener("click", openLegacy);
             document.getElementById("read-more").addEventListener("click", readMore);
         }
       }
@@ -287,7 +281,7 @@
     <div class="coach-container">
       <header data-role="Header" class="navigation-header">
         <div class="navigation-announcement">
-          <span class="navigation-title">Library is shutting down. </span>
+          <span class="navigation-title">You are using the Legacy site. </span>
           <div class="navigation-button">
             <a href = "/read-more/"><span class="navigation-button-text">See more -&gt;</span></a>
           </div>

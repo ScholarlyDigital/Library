@@ -191,7 +191,7 @@
             return;
           }
           let blockEnabled = false
-          const url = 'https://api.scholarly.repl.co/'
+          const url = 'https://scholarlylegacy.azurewebsites.net/'
           try {
             await fetch(new Request(url)).catch(_ => blockEnabled = true)
           } catch (e) {

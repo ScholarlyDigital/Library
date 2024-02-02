@@ -274,7 +274,7 @@ document.addEventListener("keydown", function(event) {
 
 function openImage() {
   if (this.innerText != ' Image Attached') return;
-  window.open("http://scholarlylegacy.eastus.cloudapp.azure.com/v1/image/"+session+"/"+this.dataset.file);
+  window.open("https://legacy.scholarly.digital/v1/image/"+session+"/"+this.dataset.file);
 }
 
 function delay(milliseconds) {

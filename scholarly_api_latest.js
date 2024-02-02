@@ -1,4 +1,4 @@
-const baseUrl = 'https://scholarlylegacy.eastus.cloudapp.azure.com/v1/';
+const baseUrl = 'https://legacy.scholarly.digital/v1/';
 
 /**
  * Represents an error for invalid arguments passed to a function.

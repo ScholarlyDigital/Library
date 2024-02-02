@@ -191,7 +191,7 @@
             return;
           }
           let blockEnabled = false
-          const url = 'https://scholarlylegacy.eastus.cloudapp.azure.com/'
+          const url = 'https://legacy.scholarly.digital/'
           try {
             await fetch(new Request(url)).catch(_ => blockEnabled = true)
           } catch (e) {

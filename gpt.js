@@ -96,7 +96,7 @@ function clearSessionCookie() {
 async function getSessionCookie() {
   let select = document.querySelector('select');
   profile = getCookie('profile');
-  if (profile === undefined) profile = 'default';
+  if (profile === undefined) profile = 'vision';
   select.value = profile;
   saveChats = getCookie("save-chats");
   if(saveChats === "false") {
@@ -401,7 +401,7 @@ async function Send() {
     if (document.getElementById(("textbox" + index.toString())).innerHTML == "Thinking...") {
       if (image !== null) {
         let id = '#image'+imageIndex.toString();
-        document.querySelector(id).innerHTML = '<span><<i class="fa-solid fa-circle-exclamation"></i> Image Failed</span>';
+        document.querySelector(id).innerHTML = '<span><i class="fa-solid fa-circle-exclamation"></i> Image Failed</span>';
         document.getElementById("upload").value = '';
       }
     }

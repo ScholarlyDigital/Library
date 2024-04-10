@@ -70,7 +70,7 @@ function resetButton() {
 }
 
 function uploadImage() {
-  if (profile !== "vision") { 
+  if (false) { 
     alert("This profile cannot upload images. Change your profile in settings.");
     event.preventDefault();
   }
@@ -96,7 +96,7 @@ function clearSessionCookie() {
 async function getSessionCookie() {
   let select = document.querySelector('select');
   profile = getCookie('profile');
-  if (profile === undefined) profile = 'vision';
+  if (profile === undefined) profile = 'default';
   select.value = profile;
   saveChats = getCookie("save-chats");
   if(saveChats === "false") {
@@ -305,7 +305,7 @@ async function Send() {
     return;
   }
   if(settings) settingsButton();
-  if(profile === 'vision') { if (document.getElementById("upload").files.length === 1) {
+  if(true) { if (document.getElementById("upload").files.length === 1) {
     image = document.getElementById("upload").files[0];
     imageIndex += 1;
   } }
